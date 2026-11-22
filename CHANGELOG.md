@@ -17,6 +17,11 @@
 - `course/bahasa-jepang.mbz`: 5 topik, 16 soal GIFT, forum, dan 28 entri glossary.
 - Skrip `scripts/create_ws_token.sh` untuk otomasi REST (token tidak di-commit).
 
+### Fitur aktif
+- Self-registration (`registerauth=email`) + self-enrolment role student.
+- H5P: 2 activity shell (kana match, susun kalimat).
+- Badges: Pemula Kana & Kanji 20, kriteria manual.
+
 ### Catatan
 - FAQ: course tidak muncul di dashboard karena user belum ter-enrol.
 - FAQ: compose yang ditimpa dari repo menghilangkan baris tailscale; cara mengembalikannya.

@@ -100,6 +100,13 @@ sudo ./uninstall.sh
 
 Secara default folder dibuat `.bak` dulu, tidak langsung dihapus.
 
+## Pendaftaran & fitur aktif
+
+- **Daftar akun**: aktif (`registerauth=email`) — pengguna bisa membuat akun sendiri lewat halaman signup.
+- **Gabung course**: *Self enrolment* aktif di course `JP-BULAN-1` dengan role **Student**.
+- **H5P**: modul `h5pactivity` aktif. Dua aktivitas kosong sudah disiapkan; isi kontennya lewat editor H5P.
+- **Badge**: dua badge course aktif dengan kriteria manual — **Pemula Kana** dan **Kanji 20**.
+
 ## FAQ
 
 **`Permission denied` saat menjalankan script**
