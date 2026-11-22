@@ -95,8 +95,34 @@ Persistent=true
 WantedBy=timers.target
 EOF
 
+cat > /etc/systemd/system/anaksepaku-moodle-autoconfirm.service <<EOF
+[Unit]
+Description=Onno Moodle autoconfirm self registration
+After=docker.service
+
+[Service]
+Type=oneshot
+WorkingDirectory=$DIR
+ExecStart=/bin/bash $DIR/scripts/autoconfirm.sh
+EOF
+
+cat > /etc/systemd/system/anaksepaku-moodle-autoconfirm.timer <<'EOF'
+[Unit]
+Description=Confirm new Moodle accounts every minute
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=1min
+AccuracySec=10s
+Persistent=true
+
+[Install]
+WantedBy=timers.target
+EOF
+
 systemctl daemon-reload
 systemctl enable --now anaksepaku-moodle-cron.timer >/dev/null 2>&1 || true
+systemctl enable --now anaksepaku-moodle-autoconfirm.timer >/dev/null 2>&1 || true
 
 log "Menjalankan container"
 docker compose up -d

@@ -16,6 +16,13 @@ services:
       timeout: 5s
       retries: 12
 
+  mailpit:
+    image: axllent/mailpit:latest
+    container_name: ${COMPOSE_PROJECT_NAME:-anaksepaku-moodle}-mailpit
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8025:8025"   # UI Mailpit, debugging saja
+
   moodle:
     image: oksigenia/moodle:5.3
     container_name: ${COMPOSE_PROJECT_NAME:-anaksepaku-moodle}-moodle
@@ -41,6 +48,11 @@ services:
       MOODLE_LANG: ${MOODLE_LANG}
       MOODLE_TIMEZONE: ${MOODLE_TIMEZONE}
       MOODLE_SSL_PROXY: auto
+      MOODLE_SMTP_HOST: mailpit
+      MOODLE_SMTP_PORT: 1025
+      MOODLE_SMTP_SECURITY: ""
+      MOODLE_SMTP_USER: ""
+      MOODLE_SMTP_PASSWORD: ""
       PHP_DATE_TIMEZONE: ${MOODLE_TIMEZONE}
       PHP_MEMORY_LIMIT: 256M
     volumes:

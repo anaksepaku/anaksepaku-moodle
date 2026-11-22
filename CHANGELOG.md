@@ -18,6 +18,7 @@
 - Skrip `scripts/create_ws_token.sh` untuk otomasi REST (token tidak di-commit).
 
 ### Fitur aktif
+- Mailpit SMTP sink + `scripts/autoconfirm.sh`: signup jalan tanpa email nyata.
 - Self-registration (`registerauth=email`) + self-enrolment role student.
 - H5P: 2 activity shell (kana match, susun kalimat).
 - Badges: Pemula Kana & Kanji 20, kriteria manual.
