@@ -110,6 +110,14 @@ chmod +x install-moodle.sh uninstall.sh scripts/*.sh
 **`env file .env not found`**
 Anda berada di folder yang salah. Masuk ke `$MOODLE_DIR` (default `/srv/moodle-elearning`), atau pakai `docker compose -f /srv/moodle-elearning/docker-compose.yml ...`.
 
+**Akses Tailscale hilang setelah `docker-compose.yml` ditimpa**
+Installer menyisipkan baris tailscale pada marker `# TAILSCALE_PORT`. Kalau compose diganti manual,
+jalankan ulang installer dengan `TAILSCALE_IP=192.0.2.10`, atau tambahkan lagi baris:
+
+```yaml
+- "192.0.2.10:8090:8080"   # ganti dengan IP tailscale0 host
+```
+
 **Moodle tidak bisa login setelah pindah host**
 Cek `MOODLE_WWWROOT` di `.env`. Harus sama persis dengan URL yang dibuka browser, termasuk `https://`.
 

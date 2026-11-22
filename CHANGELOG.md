@@ -14,6 +14,7 @@
 - MariaDB dinaikkan ke 11.4 karena Moodle 5.3 mensyaratkan minimal 11.4.0.
 
 ### Catatan
+- FAQ: compose yang ditimpa dari repo menghilangkan baris tailscale; cara mengembalikannya.
 - Belum menyertakan `.mbz`; akan dibuat setelah Moodle berjalan di prau.
 - Contoh IP memakai RFC5737, bukan IP privat asli.
 - Contoh hostname memakai `elearning.example.com`, bukan domain produksi.
