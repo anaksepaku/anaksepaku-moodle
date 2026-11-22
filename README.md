@@ -1,4 +1,4 @@
-# onno-moodle
+# anaksepaku-moodle
 
 Moodle self-host siap pakai untuk materi belajar bahasa Jepang "Bulan Pertama".
 Dirancang supaya **mudah direplikasi**: satu folder, satu `.env`, satu course `.mbz`, dan installer one-liner.
@@ -13,7 +13,7 @@ Dirancang supaya **mudah direplikasi**: satu folder, satu `.env`, satu course `.
 ## Instalasi cepat
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/anaksepaku/onno-moodle/main/install-moodle.sh | sudo bash
+curl -fsSL https://raw.githubusercontent.com/anaksepaku/anaksepaku-moodle/main/install-moodle.sh | sudo bash
 ```
 
 Variabel yang bisa diset sebelum paste:

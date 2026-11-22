@@ -11,8 +11,8 @@ echo "[uninstall] Menhentikan container"
 docker compose down || true
 
 echo "[uninstall] Menonaktifkan timer"
-systemctl disable --now onno-moodle-cron.timer >/dev/null 2>&1 || true
-rm -f /etc/systemd/system/onno-moodle-cron.service /etc/systemd/system/onno-moodle-cron.timer
+systemctl disable --now anaksepaku-moodle-cron.timer >/dev/null 2>&1 || true
+rm -f /etc/systemd/system/anaksepaku-moodle-cron.service /etc/systemd/system/anaksepaku-moodle-cron.timer
 systemctl daemon-reload >/dev/null 2>&1 || true
 
 echo "[uninstall] Memindahkan folder ke $DIR.bak"

@@ -1,13 +1,13 @@
 #!/bin/bash
-# onno-moodle — installer one-liner.
-# curl -fsSL https://raw.githubusercontent.com/anaksepaku/onno-moodle/main/install-moodle.sh | sudo bash
+# anaksepaku-moodle — installer one-liner.
+# curl -fsSL https://raw.githubusercontent.com/anaksepaku/anaksepaku-moodle/main/install-moodle.sh | sudo bash
 set -euo pipefail
 
 if [ "$(id -u)" -ne 0 ]; then
   exec sudo bash "$0" "$@"
 fi
 
-REPO="${REPO:-anaksepaku/onno-moodle}"
+REPO="${REPO:-anaksepaku/anaksepaku-moodle}"
 DIR="${MOODLE_DIR:-/srv/moodle-elearning}"
 WG_BIND_IP="${WG_BIND_IP:-127.0.0.1}"
 WG_PORT="${WG_PORT:-8090}"
@@ -15,7 +15,7 @@ TAILSCALE_IP="${TAILSCALE_IP:-}"
 WWWROOT="${MOODLE_WWWROOT:-https://elearning.anaksepaku.my.id}"
 ADMIN_EMAIL="${ADMIN_EMAIL:-admin@example.invalid}"
 
-log() { echo "[onno-moodle] $*"; }
+log() { echo "[anaksepaku-moodle] $*"; }
 
 TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT
@@ -23,7 +23,7 @@ trap 'rm -rf "$TMP"' EXIT
 log "Mengunduh repo $REPO"
 curl -fsSL "https://github.com/$REPO/archive/refs/heads/main.tar.gz" -o "$TMP/repo.tgz"
 tar xzf "$TMP/repo.tgz" -C "$TMP"
-SRC="$TMP/onno-moodle-main"
+SRC="$TMP/anaksepaku-moodle-main"
 
 mkdir -p "$DIR"
 cp -a "$SRC/." "$DIR/"
@@ -70,7 +70,7 @@ chown -R 33:33 moodledata 2>/dev/null || true
 chmod +x uninstall.sh scripts/*.sh 2>/dev/null || true
 
 log "Menulis timer cron"
-cat > /etc/systemd/system/onno-moodle-cron.service <<EOF
+cat > /etc/systemd/system/anaksepaku-moodle-cron.service <<EOF
 [Unit]
 Description=Onno Moodle cron
 After=docker.service
@@ -81,7 +81,7 @@ WorkingDirectory=$DIR
 ExecStart=/usr/bin/docker compose -f $DIR/docker-compose.yml exec -T moodle php admin/cli/cron.php
 EOF
 
-cat > /etc/systemd/system/onno-moodle-cron.timer <<'EOF'
+cat > /etc/systemd/system/anaksepaku-moodle-cron.timer <<'EOF'
 [Unit]
 Description=Run Onno Moodle cron every minute
 
@@ -96,7 +96,7 @@ WantedBy=timers.target
 EOF
 
 systemctl daemon-reload
-systemctl enable --now onno-moodle-cron.timer >/dev/null 2>&1 || true
+systemctl enable --now anaksepaku-moodle-cron.timer >/dev/null 2>&1 || true
 
 log "Menjalankan container"
 docker compose up -d
@@ -121,7 +121,7 @@ SELESAI
 Buka       : $WWWROOT
 Kredensial : $DIR/CREDENTIALS.txt (0600)
 Folder     : $DIR
-Cron       : systemctl list-timers | grep onno-moodle
+Cron       : systemctl list-timers | grep anaksepaku-moodle
 
 Langkah manual tersisa:
 1. Buat DNS + Public Hostname Cloudflare ke http://127.0.0.1:$WG_PORT

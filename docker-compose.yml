@@ -1,7 +1,7 @@
 services:
   db:
     image: mariadb:10.11
-    container_name: ${COMPOSE_PROJECT_NAME:-onno-moodle}-db
+    container_name: ${COMPOSE_PROJECT_NAME:-anaksepaku-moodle}-db
     restart: unless-stopped
     environment:
       MARIADB_ROOT_PASSWORD: ${DB_ROOT_PASS}
@@ -18,7 +18,7 @@ services:
 
   moodle:
     image: oksigenia/moodle:5.3
-    container_name: ${COMPOSE_PROJECT_NAME:-onno-moodle}-moodle
+    container_name: ${COMPOSE_PROJECT_NAME:-anaksepaku-moodle}-moodle
     restart: unless-stopped
     depends_on:
       db:
