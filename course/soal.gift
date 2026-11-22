@@ -1,0 +1,116 @@
+::Hiragana 01::Apa bunyi hiragana あ?
+{
+=a#Benar. あ dibaca "a".
+~i#Itu い.
+~u#Itu う.
+~ka#Itu か.
+}
+
+::Hiragana 02::Apa bunyi hiragana き?
+{
+=ki#Benar. き dibaca "ki".
+~ka#Itu か.
+~ku#Itu く.
+~shi#Itu し.
+}
+
+::Hiragana 03::Apa bunyi hiragana し?
+{
+=shi#Benar. し dibaca "shi", bukan "si".
+~si#Dalam romaji Hepburn ditulis shi.
+~sa#Itu さ.
+~su#Itu す.
+}
+
+::Hiragana 04::Apa bunyi hiragana つ?
+{
+=tsu#Benar. つ dibaca "tsu".
+~tu#Romaji Hepburn-nya tsu.
+~chi#Itu ち.
+~su#Itu す.
+}
+
+::Hiragana 05::Apa bunyi hiragana ふ?
+{
+=fu#Benar. ふ dibaca "fu", bukan "hu".
+~hu#Bunyinya mendekati fu.
+~ha#Itu は.
+~ho#Itu ほ.
+}
+
+::Hiragana 06::Hiragana を dibaca wo dan dipakai sebagai partikel objek.
+{
+T#Benar. を dibaca "wo" dan menandai objek.
+F#Salah. を memang dibaca "wo".
+}
+
+::Katakana 01::Apa bunyi katakana ア?
+{
+=a#Benar. ア = a.
+~i#Itu イ.
+~ka#Itu カ.
+}
+
+::Katakana 02::Apa bunyi katakana コ?
+{
+=ko#Benar. コ = ko, seperti dalam コーヒー.
+~ka#Itu カ.
+~ki#Itu キ.
+~ke#Itu ケ.
+}
+
+::Katakana 03::Katakana ー berfungsi untuk?
+{
+=memanjangkan bunyi vokal#Benar. Contoh コーヒー = kōhī.
+~menandakan dakuten#Itu tanda ゛.
+~menggandakan konsonan#Itu っ.
+}
+
+::Kanji 01::Apa arti kanji 水?
+{
+=air#Benar. 水 berarti air, dibaca mizu.
+=Air#Benar.
+~api#Itu 火.
+~gunung#Itu 山.
+}
+
+::Kanji 02::Apa arti kanji 山?
+{
+=gunung#Benar. 山 dibaca yama.
+~sungai#Itu 川.
+~kayu#Itu 木.
+}
+
+::Kanji 03::Kanji 日 bisa dibaca hi atau nichi.
+{
+T#Benar. hi (kun'yomi) dan nichi (on'yomi), seperti 日曜日 nichiyōbi.
+F#Salah. 日 memang punya dua cara baca itu.
+}
+
+::Partikel 01::Partikel yang tepat untuk kalimat "Saya adalah mahasiswa" adalah ...
+{
+=わたしは がくせいです。#Benar. は menandakan topik.
+~わたしが がくせいです。#Secara gramatikal bisa, tapi untuk pemula pola 〜は 〜です yang dipakai.
+}
+
+::Partikel 02::Partikel objek pada kalimat "Saya minum kopi" adalah ...
+{
+=を#Benar. コーヒーを のみます。
+~は# itu topik.
+~に# itu tujuan arah/waktu.
+}
+
+::Sapaan 01::Apa yang dikatakan saat pagi hari secara sopan?
+{
+=おはようございます#Benar.
+=Ohayou gozaimasu#Benar.
+=こんにちは#Itu siang.
+=こんばんは#Itu malam.
+}
+
+::Sapaan 02::Apa yang dikatakan saat menerima bantuan?
+{
+=ありがとうございます#Benar.
+=Terima kasih#Benar.
+=すみません#Itu maaf/permisi.
+}

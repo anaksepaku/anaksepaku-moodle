@@ -1,0 +1,47 @@
+services:
+  db:
+    image: mariadb:10.11
+    container_name: ${COMPOSE_PROJECT_NAME:-onno-moodle}-db
+    restart: unless-stopped
+    environment:
+      MARIADB_ROOT_PASSWORD: ${DB_ROOT_PASS}
+      MARIADB_DATABASE: ${DB_NAME}
+      MARIADB_USER: ${DB_USER}
+      MARIADB_PASSWORD: ${DB_PASS}
+    volumes:
+      - ./db:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mariadb-admin ping -h 127.0.0.1 -uroot -p${DB_ROOT_PASS} --silent"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+  moodle:
+    image: oksigenia/moodle:5.3
+    container_name: ${COMPOSE_PROJECT_NAME:-onno-moodle}-moodle
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "${WG_BIND_IP}:${WG_PORT}:8080"
+      # TAILSCALE_PORT
+    environment:
+      MOODLE_URL: ${MOODLE_WWWROOT}
+      MOODLE_DB_TYPE: mariadb
+      MOODLE_DB_HOST: db
+      MOODLE_DB_NAME: ${DB_NAME}
+      MOODLE_DB_USER: ${DB_USER}
+      MOODLE_DB_PASSWORD: ${DB_PASS}
+      MOODLE_ADMIN_USER: ${ADMIN_USER}
+      MOODLE_ADMIN_PASSWORD: ${ADMIN_PASS}
+      MOODLE_ADMIN_EMAIL: ${ADMIN_EMAIL}
+      MOODLE_SITE_NAME: ${SITE_NAME}
+      MOODLE_SITE_SHORTNAME: ${SITE_SHORTNAME}
+      MOODLE_LANG: ${MOODLE_LANG}
+      MOODLE_TIMEZONE: ${MOODLE_TIMEZONE}
+      MOODLE_SSL_PROXY: auto
+      PHP_DATE_TIMEZONE: ${MOODLE_TIMEZONE}
+      PHP_MEMORY_LIMIT: 256M
+    volumes:
+      - ./moodledata:/var/www/moodledata

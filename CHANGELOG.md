@@ -1,0 +1,15 @@
+# onno-moodle
+
+## [Unreleased]
+
+### Ditambahkan
+- Installer one-liner dengan generated `.env` dan password acak.
+- Compose stack: `oksigenia/moodle:5.3` + `mariadb:10.11`.
+- Bind loopback + opsional Tailscale, tanpa LAN exposure.
+- Skrip backup/restore dan systemd timer cron.
+- Bank soal GIFT untuk materi "Bulan Pertama".
+- Dokumentasi pindah server: course `.mbz`, site folder, host bootstrap.
+
+### Catatan
+- Belum menyertakan `.mbz`; akan dibuat setelah Moodle berjalan di prau.
+- Contoh IP memakai RFC5737, bukan IP privat asli.

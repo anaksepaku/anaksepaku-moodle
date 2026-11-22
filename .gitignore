@@ -1,0 +1,16 @@
+# Ragam berkas yang tidak boleh masuk repo
+
+.env
+CREDENTIALS.txt
+BOT_CREDENTIALS.txt
+*.bak
+*.bak2
+*.bak3
+*.bak4
+*.log
+db/
+moodledata/
+html/
+backups/
+.cache/
+.DS_Store
