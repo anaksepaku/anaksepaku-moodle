@@ -6,7 +6,7 @@ Dirancang supaya **mudah direplikasi**: satu folder, satu `.env`, satu course `.
 ## Status
 
 - Image: `oksigenia/moodle:5.3` (LTS, code Moodle asli, auto-install & auto-upgrade lewat env)
-- DB: `mariadb:10.11`
+- DB: `mariadb:11.4`
 - Bind: `127.0.0.1` + opsional IP Tailscale — **tidak diekspos ke LAN**
 - Domain contoh: `elearning.example.com` (ganti sesuai kebutuhan Anda)
 

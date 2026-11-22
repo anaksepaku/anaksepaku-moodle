@@ -1,6 +1,6 @@
 services:
   db:
-    image: mariadb:10.11
+    image: mariadb:11.4
     container_name: ${COMPOSE_PROJECT_NAME:-anaksepaku-moodle}-db
     restart: unless-stopped
     environment:
