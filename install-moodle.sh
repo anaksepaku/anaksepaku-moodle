@@ -12,7 +12,7 @@ DIR="${MOODLE_DIR:-/srv/moodle-elearning}"
 WG_BIND_IP="${WG_BIND_IP:-127.0.0.1}"
 WG_PORT="${WG_PORT:-8090}"
 TAILSCALE_IP="${TAILSCALE_IP:-}"
-WWWROOT="${MOODLE_WWWROOT:-https://elearning.anaksepaku.my.id}"
+WWWROOT="${MOODLE_WWWROOT:-https://elearning.example.com}"
 ADMIN_EMAIL="${ADMIN_EMAIL:-admin@example.invalid}"
 
 log() { echo "[anaksepaku-moodle] $*"; }

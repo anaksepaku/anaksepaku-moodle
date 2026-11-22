@@ -13,3 +13,4 @@
 ### Catatan
 - Belum menyertakan `.mbz`; akan dibuat setelah Moodle berjalan di prau.
 - Contoh IP memakai RFC5737, bukan IP privat asli.
+- Contoh hostname memakai `elearning.example.com`, bukan domain produksi.

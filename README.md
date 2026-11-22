@@ -8,7 +8,7 @@ Dirancang supaya **mudah direplikasi**: satu folder, satu `.env`, satu course `.
 - Image: `oksigenia/moodle:5.3` (LTS, code Moodle asli, auto-install & auto-upgrade lewat env)
 - DB: `mariadb:10.11`
 - Bind: `127.0.0.1` + opsional IP Tailscale — **tidak diekspos ke LAN**
-- Domain contoh: `elearning.anaksepaku.my.id` (ganti sesuai kebutuhan Anda)
+- Domain contoh: `elearning.example.com` (ganti sesuai kebutuhan Anda)
 
 ## Instalasi cepat
 
@@ -23,7 +23,7 @@ export MOODLE_DIR=/srv/moodle-elearning          # default
 export WG_BIND_IP=127.0.0.1                      # default
 export WG_PORT=8090                              # default
 export TAILSCALE_IP=192.0.2.10                   # contoh RFC5737, opsional
-export MOODLE_WWWROOT=https://elearning.anaksepaku.my.id
+export MOODLE_WWWROOT=https://elearning.example.com
 ```
 
 Installer akan:
@@ -46,7 +46,7 @@ Installer akan:
 Tambahkan di Zero Trust → Tunnels → Public Hostname:
 
 ```
-Hostname : elearning.anaksepaku.my.id
+Hostname : elearning.example.com
 Service  : HTTP
 URL      : 127.0.0.1:8090
 ```
