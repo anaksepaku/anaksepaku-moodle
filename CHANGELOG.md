@@ -13,6 +13,10 @@
 ### Perbaikan
 - MariaDB dinaikkan ke 11.4 karena Moodle 5.3 mensyaratkan minimal 11.4.0.
 
+### Course
+- `course/bahasa-jepang.mbz`: 5 topik, 16 soal GIFT, forum, dan 28 entri glossary.
+- Skrip `scripts/create_ws_token.sh` untuk otomasi REST (token tidak di-commit).
+
 ### Catatan
 - FAQ: compose yang ditimpa dari repo menghilangkan baris tailscale; cara mengembalikannya.
 - Belum menyertakan `.mbz`; akan dibuat setelah Moodle berjalan di prau.

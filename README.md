@@ -110,6 +110,14 @@ chmod +x install-moodle.sh uninstall.sh scripts/*.sh
 **`env file .env not found`**
 Anda berada di folder yang salah. Masuk ke `$MOODLE_DIR` (default `/srv/moodle-elearning`), atau pakai `docker compose -f /srv/moodle-elearning/docker-compose.yml ...`.
 
+**Butuh token REST untuk otomasi**
+
+```bash
+./scripts/create_ws_token.sh
+```
+
+Token tersimpan di `.ws_token` (mode `0600`) dan **tidak boleh di-commit**.
+
 **Akses Tailscale hilang setelah `docker-compose.yml` ditimpa**
 Installer menyisipkan baris tailscale pada marker `# TAILSCALE_PORT`. Kalau compose diganti manual,
 jalankan ulang installer dengan `TAILSCALE_IP=192.0.2.10`, atau tambahkan lagi baris:

@@ -2,7 +2,9 @@
 
 .env
 CREDENTIALS.txt
+.ws_token
 BOT_CREDENTIALS.txt
+.ws_token
 *.bak
 *.bak2
 *.bak3

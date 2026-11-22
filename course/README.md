@@ -5,7 +5,7 @@ Isi course dirancang untuk komunitas kecil: 5 topik, quiz, forum, glossary, H5P,
 ## Status berkas
 
 - `soal.gift` — bank soal siap import ke Moodle (Question bank → Import → GIFT).
-- `bahasa-jepang.mbz` — **belum dibuat**. Akan dihasilkan dari Moodle prau setelah course selesai dirakit, lalu disalin ke sini dan di-commit.
+- `bahasa-jepang.mbz` — **sudah dibuat** dari Moodle prau (5 topik + quiz + forum + glossary).
 
 ## Cara menghasilkan .mbz
 
