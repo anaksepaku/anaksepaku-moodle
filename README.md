@@ -118,6 +118,13 @@ Anda berada di folder yang salah. Masuk ke `$MOODLE_DIR` (default `/srv/moodle-e
 
 Token tersimpan di `.ws_token` (mode `0600`) dan **tidak boleh di-commit**.
 
+**Course ada tapi tidak muncul di Dashboard**
+
+Moodle dashboard hanya menampilkan course tempat user ter-enrol. Admin tidak otomatis ter-enrol.
+Enrol lewat PHP CLI (bootstrap Moodle + `enrol_get_plugin('manual')->enrol_user(...)`), atau lewat
+*Site administration → Courses → Enrolments*. Untuk akun komunitas, aktifkan *Self enrolment*
+pada course tersebut.
+
 **Akses Tailscale hilang setelah `docker-compose.yml` ditimpa**
 Installer menyisipkan baris tailscale pada marker `# TAILSCALE_PORT`. Kalau compose diganti manual,
 jalankan ulang installer dengan `TAILSCALE_IP=192.0.2.10`, atau tambahkan lagi baris:

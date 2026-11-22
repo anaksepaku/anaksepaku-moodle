@@ -18,6 +18,7 @@
 - Skrip `scripts/create_ws_token.sh` untuk otomasi REST (token tidak di-commit).
 
 ### Catatan
+- FAQ: course tidak muncul di dashboard karena user belum ter-enrol.
 - FAQ: compose yang ditimpa dari repo menghilangkan baris tailscale; cara mengembalikannya.
 - Belum menyertakan `.mbz`; akan dibuat setelah Moodle berjalan di prau.
 - Contoh IP memakai RFC5737, bukan IP privat asli.
