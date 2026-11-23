@@ -179,3 +179,7 @@ Cek timer cron: `systemctl list-timers | grep moodle`.
 - Self-registration disarankan mati; akun komunitas dibuat manual.
 
 Lisensi: materi bebas dipakai dengan atribusi ke OnnoWiki/SpeedyWiki.
+
+## PDF v2
+
+`course/pdf/` berisi PDF gabungan dan PDF per sesi. File per sesi juga sudah dilampirkan sebagai Resource di Moodle pada seksi masing-masing.
