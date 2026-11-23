@@ -135,6 +135,10 @@ for i in $(seq 1 60); do
   sleep 5
 done
 
+CFG_HOST="$(printf '%s' "$WWWROOT" | sed -E 's#^https?://##; s#/.*$##')"
+docker compose exec -T moodle php admin/cli/cfg.php --name=supportname --set="$CFG_HOST" >/dev/null 2>&1 || true
+docker compose exec -T moodle php admin/cli/cfg.php --name=emailfromvia --set=0 >/dev/null 2>&1 || true
+
 MBZ=$(find course -maxdepth 1 -name '*.mbz' -print -quit 2>/dev/null || true)
 if [ -n "$MBZ" ]; then
   log "Mengimpor course $MBZ (manual via UI bila CLI tidak tersedia)"

@@ -114,6 +114,11 @@ dan PTR/SPF/DKIM valid. `mailpit` + `scripts/autoconfirm.sh` hanya fallback saat
 asli; aktifkan timer autoconfirm hanya untuk Testing lokal:
 `systemctl enable --now anaksepaku-moodle-autoconfirm.timer`.
 
+## Nama pengirim email
+
+Installer otomatis mengisi `supportname` dari host `MOODLE_WWWROOT` dan menyetel `emailfromvia=0`,
+sehingga email tampil sebagai `"domainanda" <noreply@...>` tanpa embel-embel `(via ...)`.
+
 ## FAQ
 
 **`Permission denied` saat menjalankan script**

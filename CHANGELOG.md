@@ -18,6 +18,7 @@
 - Skrip `scripts/create_ws_token.sh` untuk otomasi REST (token tidak di-commit).
 
 ### Mail final
+- From name email jadi `anaksepaku.my.id` (supportname + emailfromvia=0).
 - Autoconfirm timer dinonaktifkan; signup pakai verifikasi email asli via SMTP SG.
 - Gmail `250 2.0.0 OK` terverifikasi (PTR/SPF/DKIM/DMARC valid).
 
