@@ -21,7 +21,7 @@
 - Plugin `local/autoenrol`: enrol otomatis ke course saat first login (role Student).
 
 ### Mail final
-- From name email jadi `anaksepaku.my.id` (supportname + emailfromvia=0).
+- From name email jadi `anaksepaku.my.id` (supportuserid + supportname + emailfromvia=0, admin ikut disamakan).
 - Autoconfirm timer dinonaktifkan; signup pakai verifikasi email asli via SMTP SG.
 - Gmail `250 2.0.0 OK` terverifikasi (PTR/SPF/DKIM/DMARC valid).
 

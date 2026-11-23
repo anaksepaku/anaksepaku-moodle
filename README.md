@@ -122,8 +122,9 @@ email. Observer memakai event `user_loggedin` dan role **Student**. File plugin 
 
 ## Nama pengirim email
 
-Installer otomatis mengisi `supportname` dari host `MOODLE_WWWROOT` dan menyetel `emailfromvia=0`,
-sehingga email tampil sebagai `"domainanda" <noreply@...>` tanpa embel-embel `(via ...)`.
+Installer otomatis membuat user `support`, mengisi `supportuserid`/`supportname` dari host
+`MOODLE_WWWROOT`, dan menyetel `emailfromvia=0`. Nama admin juga disamakan supaya semua email
+(signup, reset password, notifikasi) tampil sebagai `"domainanda" <noreply@...>` tanpa `(via ...)`.
 
 ## FAQ
 

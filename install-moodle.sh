@@ -143,8 +143,13 @@ if [ -n "$MCID" ]; then
 fi
 
 CFG_HOST="$(printf '%s' "$WWWROOT" | sed -E 's#^https?://##; s#/.*$##')"
-docker compose exec -T moodle php admin/cli/cfg.php --name=supportname --set="$CFG_HOST" >/dev/null 2>&1 || true
-docker compose exec -T moodle php admin/cli/cfg.php --name=emailfromvia --set=0 >/dev/null 2>&1 || true
+if [ -n "${MCID:-}" ]; then
+  docker cp "$DIR/scripts/set_mail_sender.php" "$MCID":/var/www/moodle/set_mail_sender.php >/dev/null 2>&1 || true
+  docker compose exec -T moodle php /var/www/moodle/set_mail_sender.php "$CFG_HOST" >/dev/null 2>&1 || true
+else
+  docker compose exec -T moodle php admin/cli/cfg.php --name=supportname --set="$CFG_HOST" >/dev/null 2>&1 || true
+  docker compose exec -T moodle php admin/cli/cfg.php --name=emailfromvia --set=0 >/dev/null 2>&1 || true
+fi
 
 MBZ=$(find course -maxdepth 1 -name '*.mbz' -print -quit 2>/dev/null || true)
 if [ -n "$MBZ" ]; then
