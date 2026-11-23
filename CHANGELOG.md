@@ -17,6 +17,11 @@
 - `course/bahasa-jepang.mbz`: 5 topik, 16 soal GIFT, forum, dan 28 entri glossary.
 - Skrip `scripts/create_ws_token.sh` untuk otomasi REST (token tidak di-commit).
 
+### Retirement v1
+- Quiz v1 dan kategori soalnya dihapus; kategori lama dinonaktifkan jadi `V1 Legacy (kosong)`.
+- Buku v2 & quiz v2 di-rename jadi nama final tanpa embel-embel “v2”.
+- Ringkasan seksi disederhanakan jadi penunjuk ke Buku.
+
 ### Import v2
 - Buku 14 bab diimpor sebagai Book module.
 - Quiz tambahan XML v2: 11 soal unik (33 entri termasuk sub-soal cloze).

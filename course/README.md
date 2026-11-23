@@ -26,3 +26,7 @@ Sumber utama: https://github.com/anaksepaku/onnowiki-replica (pola installer & d
 ## Sumber v2
 
 File asli versi revisi v2 ada di folder `course/v2/`: book ZIP 14 bab, quiz tambahan XML, dan README impor.
+
+## V1 legacy
+
+`course/v1/soal.gift` adalah bank soal versi lama (16 soal) dan sudah tidak dipakai di course. Versi aktif ada di `course/v2/`.
