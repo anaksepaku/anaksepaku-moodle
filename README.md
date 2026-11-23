@@ -182,4 +182,4 @@ Lisensi: materi bebas dipakai dengan atribusi ke OnnoWiki/SpeedyWiki.
 
 ## PDF v2
 
-`course/pdf/` berisi PDF gabungan dan PDF per sesi. File per sesi juga sudah dilampirkan sebagai Resource di Moodle pada seksi masing-masing.
+`course/pdf/` hanya cadangan cetak. **Moodle tidak memakai PDF** — tiap sesi memakai aktivitas **Page** berisi teks materi langsung.

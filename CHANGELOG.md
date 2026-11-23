@@ -17,7 +17,10 @@
 - `course/bahasa-jepang.mbz`: 5 topik, 16 soal GIFT, forum, dan 28 entri glossary.
 - Skrip `scripts/create_ws_token.sh` untuk otomasi REST (token tidak di-commit).
 
-### PDF v2
+### Materi langsung
+- PDF resources dihapus karena link bermasalah; tiap sesi kini punya Page berisi materi HTML langsung.
+
+### PDF v2 (opsional)
 - PDF gabungan + 5 PDF per sesi dibuat dari 14 bab.
 - Tiap sesi Moodle mendapat Resource PDF.
 
