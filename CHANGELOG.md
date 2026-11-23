@@ -17,6 +17,10 @@
 - `course/bahasa-jepang.mbz`: 5 topik, 16 soal GIFT, forum, dan 28 entri glossary.
 - Skrip `scripts/create_ws_token.sh` untuk otomasi REST (token tidak di-commit).
 
+### Mail final
+- Autoconfirm timer dinonaktifkan; signup pakai verifikasi email asli via SMTP SG.
+- Gmail `250 2.0.0 OK` terverifikasi (PTR/SPF/DKIM/DMARC valid).
+
 ### Retirement v1
 - Quiz v1 dan kategori soalnya dihapus; kategori lama dinonaktifkan jadi `V1 Legacy (kosong)`.
 - Buku v2 & quiz v2 di-rename jadi nama final tanpa embel-embel “v2”.

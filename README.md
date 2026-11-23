@@ -102,16 +102,17 @@ Secara default folder dibuat `.bak` dulu, tidak langsung dihapus.
 
 ## Pendaftaran & fitur aktif
 
-- **Daftar akun**: aktif (`registerauth=email`). Email verifikasi dikirim ke **Mailpit** (SMTP sink lokal), lalu timer `anaksepaku-moodle-autoconfirm.timer` mengonfirmasi akun otomatis — **tidak perlu email nyata**.
+- **Daftar akun**: aktif (`registerauth=email`). Email verifikasi dikirim lewat **SMTP relay SG** ke email asli pengguna. Timer `anaksepaku-moodle-autoconfirm.timer` **dinonaktifkan** setelah relay nyata terverifikasi.
 - **Gabung course**: *Self enrolment* aktif di course `JP-BULAN-1` dengan role **Student**.
 - **H5P**: modul `h5pactivity` aktif. Dua aktivitas kosong sudah disiapkan; isi kontennya lewat editor H5P.
 - **Badge**: dua badge course aktif dengan kriteria manual — **Pemula Kana** dan **Kanji 20**.
 
 **Signup error “Tried to send you an email but failed!”**
 
-Moodle tidak punya MTA/SMTP. Repo ini menyediakan `mailpit` sebagai SMTP sink dan timer
-autoconfirm. Pastikan container `mailpit` jalan dan timer aktif:
-`systemctl list-timers | grep anaksepaku-moodle-autoconfirm`.
+Cek `smtphosts` di Moodle. Jika memakai relay SG: `100.98.171.59:25`, pastikan Postfix SG jalan
+dan PTR/SPF/DKIM valid. `mailpit` + `scripts/autoconfirm.sh` hanya fallback saat belum ada SMTP
+asli; aktifkan timer autoconfirm hanya untuk Testing lokal:
+`systemctl enable --now anaksepaku-moodle-autoconfirm.timer`.
 
 ## FAQ
 
