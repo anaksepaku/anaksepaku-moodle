@@ -17,6 +17,11 @@
 - `course/bahasa-jepang.mbz`: 5 topik, 16 soal GIFT, forum, dan 28 entri glossary.
 - Skrip `scripts/create_ws_token.sh` untuk otomasi REST (token tidak di-commit).
 
+### Import v2
+- Buku 14 bab diimpor sebagai Book module.
+- Quiz tambahan XML v2: 11 soal unik (33 entri termasuk sub-soal cloze).
+- `.mbz` diregenerasi.
+
 ### Fitur aktif
 - Mailpit SMTP sink + `scripts/autoconfirm.sh`: signup jalan tanpa email nyata.
 - Self-registration (`registerauth=email`) + self-enrolment role student.

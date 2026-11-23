@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="category"><category><text>$course$/top/Bahasa Jepang Bulan 1/5 Tambahan: Angka, Waktu, Kata Kerja, Kata Sifat</text></category></question>
+<question type="cloze"><name><text>Angka</text></name>
+<questiontext format="html"><text><![CDATA[<p>Pilih bacaan angka yang benar.</p><p>3 {1:MULTICHOICE_S:=さん~し~ろく} <br>4 {1:MULTICHOICE_S:=よん~さん~なな} <br>7 {1:MULTICHOICE_S:=なな~ろく~はち} <br>9 {1:MULTICHOICE_S:=きゅう~じゅう~ご} <br>10 {1:MULTICHOICE_S:=じゅう~ひゃく~に} <br>20 {1:MULTICHOICE_S:=にじゅう~じゅうに~さんじゅう} <br>100 {1:MULTICHOICE_S:=ひゃく~じゅう~せん} <br>300 {1:MULTICHOICE_S:=さんびゃく~さんひゃく~みびゃく} </p>]]></text></questiontext>
+<generalfeedback format="html"><text><![CDATA[Angka 4 sering よん, 7 sering なな, 9 sering きゅう. 300 = さんびゃく.]]></text></generalfeedback>
+<penalty>0.3333333</penalty><hidden>0</hidden></question>
+<question type="cloze"><name><text>Jam</text></name>
+<questiontext format="html"><text><![CDATA[<p>Pilih bacaan jam yang benar.</p><p>4:00 {1:MULTICHOICE_S:=よじ~よんじ~しじ} <br>9:00 {1:MULTICHOICE_S:=くじ~きゅうじ~ここのじ} <br>7:00 {1:MULTICHOICE_S:=しちじ~ななじ~ひちじ} <br>3:30 {1:MULTICHOICE_S:=さんじはん~さんじさんじゅう~さんはん} </p>]]></text></questiontext>
+<generalfeedback format="html"><text><![CDATA[4:00 = よじ, 7:00 = しちじ, 9:00 = くじ. はん = setengah.]]></text></generalfeedback>
+<penalty>0.3333333</penalty><hidden>0</hidden></question>
+<question type="matching"><name><text>Kata tanya</text></name>
+<questiontext format="html"><text><![CDATA[Pasangkan kata tanya dengan artinya.]]></text></questiontext>
+<generalfeedback format="html"><text><![CDATA[Kata tanya menempati posisi jawaban.]]></text></generalfeedback>
+<defaultgrade>1</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden>
+<shuffleanswers>true</shuffleanswers><subquestion format="html"><text><![CDATA[なに]]></text><answer><text>apa</text></answer></subquestion><subquestion format="html"><text><![CDATA[だれ]]></text><answer><text>siapa</text></answer></subquestion><subquestion format="html"><text><![CDATA[どこ]]></text><answer><text>di mana</text></answer></subquestion><subquestion format="html"><text><![CDATA[いつ]]></text><answer><text>kapan</text></answer></subquestion><subquestion format="html"><text><![CDATA[いくら]]></text><answer><text>berapa harga</text></answer></subquestion></question>
+<question type="multichoice"><name><text>Penunjuk benda</text></name>
+<questiontext format="html"><text><![CDATA[Benda berada dekat <b>lawan bicara</b>. Kata yang tepat ...]]></text></questiontext>
+<generalfeedback format="html"><text><![CDATA[これ = dekat pembicara, それ = dekat lawan bicara, あれ = jauh dari keduanya.]]></text></generalfeedback>
+<defaultgrade>1</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden>
+<single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+<answer fraction="100" format="html"><text><![CDATA[それ]]></text><feedback format="html"><text></text></feedback></answer><answer fraction="0" format="html"><text><![CDATA[これ]]></text><feedback format="html"><text></text></feedback></answer><answer fraction="0" format="html"><text><![CDATA[あれ]]></text><feedback format="html"><text></text></feedback></answer><answer fraction="0" format="html"><text><![CDATA[どれ]]></text><feedback format="html"><text></text></feedback></answer></question>
+<question type="multichoice"><name><text>Terjemahan トイレは どこですか</text></name>
+<questiontext format="html"><text><![CDATA[トイレは どこですか。 berarti ...]]></text></questiontext>
+<generalfeedback format="html"><text><![CDATA[どこ = di mana.]]></text></generalfeedback>
+<defaultgrade>1</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden>
+<single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+<answer fraction="100" format="html"><text><![CDATA[Toilet di mana?]]></text><feedback format="html"><text></text></feedback></answer><answer fraction="0" format="html"><text><![CDATA[Ini toilet.]]></text><feedback format="html"><text></text></feedback></answer><answer fraction="0" format="html"><text><![CDATA[Berapa harga toilet?]]></text><feedback format="html"><text></text></feedback></answer><answer fraction="0" format="html"><text><![CDATA[Siapa di toilet?]]></text><feedback format="html"><text></text></feedback></answer></question>
+<question type="cloze"><name><text>Bentuk kata kerja</text></name>
+<questiontext format="html"><text><![CDATA[<p>Pilih bentuk yang benar.</p><p>のみます (negatif) {1:MULTICHOICE_S:=のみません~のみました~のみませんでした} <br>いきます (lampau positif) {1:MULTICHOICE_S:=いきました~いきません~いきませんでした} <br>ねます (negatif) {1:MULTICHOICE_S:=ねません~ねました~ねませんでした} <br>みます (lampau negatif) {1:MULTICHOICE_S:=みませんでした~みません~みました} </p>]]></text></questiontext>
+<generalfeedback format="html"><text><![CDATA[ます → ません / ました / ませんでした.]]></text></generalfeedback>
+<penalty>0.3333333</penalty><hidden>0</hidden></question>
+<question type="multichoice"><name><text>Urutan kalimat</text></name>
+<questiontext format="html"><text><![CDATA[Kalimat yang benar untuk 'Setiap pagi saya minum kopi di rumah' ...]]></text></questiontext>
+<generalfeedback format="html"><text><![CDATA[Urutan: waktu - tempat で - objek を - kata kerja.]]></text></generalfeedback>
+<defaultgrade>1</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden>
+<single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+<answer fraction="100" format="html"><text><![CDATA[まいあさ うちで コーヒーを のみます。]]></text><feedback format="html"><text></text></feedback></answer><answer fraction="0" format="html"><text><![CDATA[まいあさ うちを コーヒーで のみます。]]></text><feedback format="html"><text></text></feedback></answer><answer fraction="0" format="html"><text><![CDATA[のみます まいあさ うちで コーヒーを。]]></text><feedback format="html"><text></text></feedback></answer><answer fraction="0" format="html"><text><![CDATA[まいあさ うちに コーヒーの のみます。]]></text><feedback format="html"><text></text></feedback></answer></question>
+<question type="cloze"><name><text>Kata sifat い</text></name>
+<questiontext format="html"><text><![CDATA[<p>Pilih bentuk yang benar.</p><p>おおきい (negatif) {1:MULTICHOICE_S:=おおきくないです~おおきいじゃありません~おおきかったです} <br>おいしい (lampau positif) {1:MULTICHOICE_S:=おいしかったです~おいしいでした~おいしくないです} <br>いい (negatif) {1:MULTICHOICE_S:=よくないです~いくないです~いいくないです} </p>]]></text></questiontext>
+<generalfeedback format="html"><text><![CDATA[い → くないです (negatif), → かったです (lampau). いい berasal dari よい.]]></text></generalfeedback>
+<penalty>0.3333333</penalty><hidden>0</hidden></question>
+<question type="cloze"><name><text>Kata sifat な</text></name>
+<questiontext format="html"><text><![CDATA[<p>Pilih bentuk yang benar.</p><p>きれい (negatif) {1:MULTICHOICE_S:=きれいじゃ ありません~きれくないです~きれいくないです} <br>しずか (lampau positif) {1:MULTICHOICE_S:=しずかでした~しずかかったです~しずかいでした} <br>きれい termasuk kata sifat jenis {1:MULTICHOICE_S:=な~い~bukan keduanya} </p>]]></text></questiontext>
+<generalfeedback format="html"><text><![CDATA[Kata sifat な memakai じゃ ありません dan でした. きれい termasuk な-adjektiva.]]></text></generalfeedback>
+<penalty>0.3333333</penalty><hidden>0</hidden></question>
+<question type="multichoice"><name><text>Arti ね</text></name>
+<questiontext format="html"><text><![CDATA[Partikel ね di akhir kalimat (ちょっと たかいですね) berfungsi ...]]></text></questiontext>
+<generalfeedback format="html"><text><![CDATA[ね = 'ya/kan', mencari persetujuan.]]></text></generalfeedback>
+<defaultgrade>1</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden>
+<single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+<answer fraction="100" format="html"><text><![CDATA[meminta persetujuan (kan / ya)]]></text><feedback format="html"><text></text></feedback></answer><answer fraction="0" format="html"><text><![CDATA[menandai pertanyaan]]></text><feedback format="html"><text></text></feedback></answer><answer fraction="0" format="html"><text><![CDATA[menandai objek]]></text><feedback format="html"><text></text></feedback></answer><answer fraction="0" format="html"><text><![CDATA[menandai tempat]]></text><feedback format="html"><text></text></feedback></answer></question>
+<question type="multichoice"><name><text>Urutan goresan</text></name>
+<questiontext format="html"><text><![CDATA[Aturan urutan goresan umum yang benar adalah ...]]></text></questiontext>
+<generalfeedback format="html"><text><![CDATA[Pedoman umum; ikuti diagram goresan tiap huruf.]]></text></generalfeedback>
+<defaultgrade>1</defaultgrade><penalty>0.3333333</penalty><hidden>0</hidden>
+<single>true</single><shuffleanswers>true</shuffleanswers><answernumbering>abc</answernumbering>
+<answer fraction="100" format="html"><text><![CDATA[atas ke bawah, kiri ke kanan]]></text><feedback format="html"><text></text></feedback></answer><answer fraction="0" format="html"><text><![CDATA[bawah ke atas, kanan ke kiri]]></text><feedback format="html"><text></text></feedback></answer><answer fraction="0" format="html"><text><![CDATA[bebas]]></text><feedback format="html"><text></text></feedback></answer><answer fraction="0" format="html"><text><![CDATA[kanan ke kiri, atas ke bawah]]></text><feedback format="html"><text></text></feedback></answer></question>
+</quiz>

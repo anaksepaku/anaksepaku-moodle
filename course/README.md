@@ -22,3 +22,7 @@ Site administration → Questions → Question bank → Import → format **GIFT
 
 Materi lengkap dan docx printable ada di folder `materials/` (di luar repo ini bila belum disalin).
 Sumber utama: https://github.com/anaksepaku/onnowiki-replica (pola installer & dokumentasi).
+
+## Sumber v2
+
+File asli versi revisi v2 ada di folder `course/v2/`: book ZIP 14 bab, quiz tambahan XML, dan README impor.
