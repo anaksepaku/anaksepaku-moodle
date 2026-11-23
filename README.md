@@ -114,6 +114,11 @@ dan PTR/SPF/DKIM valid. `mailpit` + `scripts/autoconfirm.sh` hanya fallback saat
 asli; aktifkan timer autoconfirm hanya untuk Testing lokal:
 `systemctl enable --now anaksepaku-moodle-autoconfirm.timer`.
 
+## Tampilan course per sesi
+
+Course memakai format **Topics** dengan `coursedisplay=1` (satu sesi per halaman) dan
+`hiddensections=0`, sehingga menu sesi muncul di atas tanpa menggulung satu halaman panjang.
+
 ## Auto-enrol pengguna baru
 
 Plugin kecil `local/autoenrol` meng-enrol user ke course saat **first login** setelah verifikasi

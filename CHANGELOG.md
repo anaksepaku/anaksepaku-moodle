@@ -17,6 +17,9 @@
 - `course/bahasa-jepang.mbz`: 5 topik, 16 soal GIFT, forum, dan 28 entri glossary.
 - Skrip `scripts/create_ws_token.sh` untuk otomasi REST (token tidak di-commit).
 
+### Tampilan
+- `coursedisplay=1` + `hiddensections=0`: course tampil per sesi, bukan satu halaman panjang.
+
 ### Auto-enrol
 - Plugin `local/autoenrol`: enrol otomatis ke course saat first login (role Student).
 
