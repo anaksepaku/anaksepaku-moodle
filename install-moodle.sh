@@ -135,6 +135,13 @@ for i in $(seq 1 60); do
   sleep 5
 done
 
+log "Memasang plugin auto-enrol"
+MCID="$(docker compose ps -q moodle | head -1)"
+if [ -n "$MCID" ]; then
+  docker cp "$DIR/local/autoenrol" "$MCID":/var/www/moodle/public/local/autoenrol >/dev/null 2>&1 || true
+  docker compose exec -T moodle php /var/www/moodle/admin/cli/upgrade.php --non-interactive >/dev/null 2>&1 || true
+fi
+
 CFG_HOST="$(printf '%s' "$WWWROOT" | sed -E 's#^https?://##; s#/.*$##')"
 docker compose exec -T moodle php admin/cli/cfg.php --name=supportname --set="$CFG_HOST" >/dev/null 2>&1 || true
 docker compose exec -T moodle php admin/cli/cfg.php --name=emailfromvia --set=0 >/dev/null 2>&1 || true

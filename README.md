@@ -114,6 +114,12 @@ dan PTR/SPF/DKIM valid. `mailpit` + `scripts/autoconfirm.sh` hanya fallback saat
 asli; aktifkan timer autoconfirm hanya untuk Testing lokal:
 `systemctl enable --now anaksepaku-moodle-autoconfirm.timer`.
 
+## Auto-enrol pengguna baru
+
+Plugin kecil `local/autoenrol` meng-enrol user ke course saat **first login** setelah verifikasi
+email. Observer memakai event `user_loggedin` dan role **Student**. File plugin ada di
+`local/autoenrol/` dan otomatis disalin installer ke container Moodle.
+
 ## Nama pengirim email
 
 Installer otomatis mengisi `supportname` dari host `MOODLE_WWWROOT` dan menyetel `emailfromvia=0`,

@@ -17,6 +17,9 @@
 - `course/bahasa-jepang.mbz`: 5 topik, 16 soal GIFT, forum, dan 28 entri glossary.
 - Skrip `scripts/create_ws_token.sh` untuk otomasi REST (token tidak di-commit).
 
+### Auto-enrol
+- Plugin `local/autoenrol`: enrol otomatis ke course saat first login (role Student).
+
 ### Mail final
 - From name email jadi `anaksepaku.my.id` (supportname + emailfromvia=0).
 - Autoconfirm timer dinonaktifkan; signup pakai verifikasi email asli via SMTP SG.
