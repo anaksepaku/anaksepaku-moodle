@@ -117,7 +117,8 @@ asli; aktifkan timer autoconfirm hanya untuk Testing lokal:
 ## Tampilan course per sesi
 
 Course memakai format **Topics** dengan `coursedisplay=1` (satu sesi per halaman) dan
-`hiddensections=0`, sehingga menu sesi muncul di atas tanpa menggulung satu halaman panjang.
+`hiddensections=0`. Di seksi **General** juga ada **Daftar Sesi** berisi tautan ke Minggu 1–4 dan
+Latihan, supaya navigasi tetap terlihat di tema mobile.
 
 ## Auto-enrol pengguna baru
 

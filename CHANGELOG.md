@@ -19,6 +19,7 @@
 
 ### Tampilan
 - `coursedisplay=1` + `hiddensections=0`: course tampil per sesi, bukan satu halaman panjang.
+- Seksi General berisi **Daftar Sesi** (tautan Minggu 1–4 + Latihan) untuk navigasi mobile.
 
 ### Auto-enrol
 - Plugin `local/autoenrol`: enrol otomatis ke course saat first login (role Student).
