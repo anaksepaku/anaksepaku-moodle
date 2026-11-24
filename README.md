@@ -183,3 +183,7 @@ Lisensi: materi bebas dipakai dengan atribusi ke OnnoWiki/SpeedyWiki.
 ## PDF v2
 
 `course/pdf/` hanya cadangan cetak. **Moodle tidak memakai PDF** — tiap sesi memakai aktivitas **Page** berisi teks materi langsung.
+
+## Troubleshooting quiz
+
+Error `not enough random questions` terjadi bila jumlah slot acak melebihi jumlah soal top-level di kategori. Quiz v2 memakai 33 slot acak dengan filter kategori `9,14` (11 + 22 soal). Jalankan `scripts/fix_quiz_filter.php` di container untuk menyetel ulang filter tersebut.
