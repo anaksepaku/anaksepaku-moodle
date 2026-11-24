@@ -1,16 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="180" viewBox="0 0 900 180">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="180" viewBox="0 0 1000 180">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#1269b2"/>
-      <stop offset="1" stop-color="#0ca6a0"/>
+      <stop offset="1" stop-color="#10a078"/>
     </linearGradient>
   </defs>
   <g transform="translate(15,15)">
     <rect width="150" height="150" rx="33" fill="url(#g)"/>
-    <text x="75" y="99" text-anchor="middle" font-family="'Noto Sans JP','IPA Gothic',sans-serif" font-size="81" fill="#fff">あ</text>
-    <circle cx="120" cy="117" r="13" fill="#e74c3c"/>
+    <path d="M27 63 L72 70 L72 120 L27 108 Z" fill="#fff"/>
+    <path d="M78 70 L123 63 L123 108 L78 120 Z" fill="#fff"/>
+    <line x1="75" y1="70" x2="75" y2="120" stroke="#1269b2" stroke-width="3"/>
+    <g fill="#fff">
+      <circle cx="54" cy="41" r="8"/><circle cx="75" cy="30" r="8"/><circle cx="96" cy="41" r="8"/>
+    </g>
+    <path d="M54 41 L75 30 L96 41" stroke="#fff" stroke-width="3" fill="none" opacity="0.85"/>
   </g>
-  <text x="190" y="60" font-family="DejaVu Sans,Arial,sans-serif" font-size="28" font-weight="bold" fill="#0ca6a0">E-LEARNING</text>
-  <text x="190" y="115" font-family="DejaVu Sans,Arial,sans-serif" font-size="54" font-weight="bold" fill="#172a45">Anaksepaku</text>
-  <text x="190" y="151" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#5c6978">Bahasa Jepang · Bulan Pertama</text>
+  <text x="190" y="58" font-family="DejaVu Sans,Arial,sans-serif" font-size="28" font-weight="bold" fill="#10a078">E-LEARNING</text>
+  <text x="190" y="112" font-family="DejaVu Sans,Arial,sans-serif" font-size="46" font-weight="bold" fill="#172a45">Komunitas Anak Sepaku</text>
+  <text x="190" y="151" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#5c6978">Belajar bareng · Materi swadaya komunitas</text>
 </svg>

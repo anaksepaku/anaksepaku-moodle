@@ -190,4 +190,4 @@ Error `not enough random questions` terjadi bila jumlah slot acak melebihi jumla
 
 ## Branding
 
-`brand/` berisi logo Moodle: `moodle-logo.png` (Logo), `moodle-logo-compact.png` (Compact logo), `favicon.png`, dan sumber SVG. Generate ulang dengan `scripts/make_moodle_logo.py`; pasang ke Moodle dengan `scripts/apply_moodle_logo.php` (file disimpan di `core_admin` area `logo`, `logocompact`, `favicon` dengan `itemid=0`).
+`brand/` berisi logo Moodle: `moodle-logo.png` (Logo), `moodle-logo-compact.png` (Compact logo), `favicon.png`, dan sumber SVG. Identitas: e-learning komunitas Anak Sepaku (bukan khusus bahasa Jepang). Generate ulang dengan `scripts/make_moodle_logo.py`; pasang ke Moodle dengan `scripts/apply_moodle_logo.php` (file disimpan di `core_admin` area `logo`, `logocompact`, `favicon` dengan `itemid=0`).

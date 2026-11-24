@@ -18,7 +18,7 @@
 - Skrip `scripts/create_ws_token.sh` untuk otomasi REST (token tidak di-commit).
 
 ### Branding
-- Logo, compact logo, dan favicon dibuat dan dipasang via core_admin settings.
+- Logo, compact logo, dan favicon dibuat dan dipasang via core_admin settings. Revisi identitas: komunitas Anak Sepaku, materi umum/swadaya komunitas.
 
 ### Quiz
 - Random question filter diset ke kategori 9 + 14 (33 soal) agar 33 slot tidak kehabisan soal.
