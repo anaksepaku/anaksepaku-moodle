@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="180" viewBox="0 0 900 180">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1269b2"/>
+      <stop offset="1" stop-color="#0ca6a0"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(15,15)">
+    <rect width="150" height="150" rx="33" fill="url(#g)"/>
+    <text x="75" y="99" text-anchor="middle" font-family="'Noto Sans JP','IPA Gothic',sans-serif" font-size="81" fill="#fff">あ</text>
+    <circle cx="120" cy="117" r="13" fill="#e74c3c"/>
+  </g>
+  <text x="190" y="60" font-family="DejaVu Sans,Arial,sans-serif" font-size="28" font-weight="bold" fill="#0ca6a0">E-LEARNING</text>
+  <text x="190" y="115" font-family="DejaVu Sans,Arial,sans-serif" font-size="54" font-weight="bold" fill="#172a45">Anaksepaku</text>
+  <text x="190" y="151" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#5c6978">Bahasa Jepang · Bulan Pertama</text>
+</svg>

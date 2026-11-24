@@ -187,3 +187,7 @@ Lisensi: materi bebas dipakai dengan atribusi ke OnnoWiki/SpeedyWiki.
 ## Troubleshooting quiz
 
 Error `not enough random questions` terjadi bila jumlah slot acak melebihi jumlah soal top-level di kategori. Quiz v2 memakai 33 slot acak dengan filter kategori `9,14` (11 + 22 soal). Jalankan `scripts/fix_quiz_filter.php` di container untuk menyetel ulang filter tersebut.
+
+## Branding
+
+`brand/` berisi logo Moodle: `moodle-logo.png` (Logo), `moodle-logo-compact.png` (Compact logo), `favicon.png`, dan sumber SVG. Generate ulang dengan `scripts/make_moodle_logo.py`; pasang ke Moodle dengan `scripts/apply_moodle_logo.php` (file disimpan di `core_admin` area `logo`, `logocompact`, `favicon` dengan `itemid=0`).

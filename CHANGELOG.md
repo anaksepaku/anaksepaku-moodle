@@ -17,6 +17,9 @@
 - `course/bahasa-jepang.mbz`: 5 topik, 16 soal GIFT, forum, dan 28 entri glossary.
 - Skrip `scripts/create_ws_token.sh` untuk otomasi REST (token tidak di-commit).
 
+### Branding
+- Logo, compact logo, dan favicon dibuat dan dipasang via core_admin settings.
+
 ### Quiz
 - Random question filter diset ke kategori 9 + 14 (33 soal) agar 33 slot tidak kehabisan soal.
 
