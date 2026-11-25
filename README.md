@@ -191,3 +191,7 @@ Error `not enough random questions` terjadi bila jumlah slot acak melebihi jumla
 ## Branding
 
 `brand/` berisi logo Moodle: `moodle-logo.png` (Logo), `moodle-logo-compact.png` (Compact logo), `favicon.png`, dan sumber SVG. Identitas: e-learning komunitas Anak Sepaku (bukan khusus bahasa Jepang). Generate ulang dengan `scripts/make_moodle_logo.py`; pasang ke Moodle dengan `scripts/apply_moodle_logo.php` (file disimpan di `core_admin` area `logo`, `logocompact`, `favicon` dengan `itemid=0`).
+
+## Tampilan halaman depan
+
+Halaman depan memakai theme **Academi 5.3** (sama seperti openCourse ITTS). Pasang dengan `scripts/install_academi.sh` — **backup dulu** lewat `scripts/backup.sh`. Slider ada di `brand/slides/`, diatur lewat `scripts/configure_academi.php`. Konten dummy theme dibersihkan oleh `scripts/clean_academi_content.php`.
