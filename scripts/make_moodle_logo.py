@@ -20,7 +20,7 @@ def gradient(size, c1, c2):
 
 def make_icon(px):
     p = px * S
-    grad = gradient((p, p), (18, 105, 178), (16, 160, 120))
+    grad = gradient((p, p), (18, 105, 178), (14, 130, 190))
     mask = Image.new('L', (p, p), 0)
     md = ImageDraw.Draw(mask)
     md.rounded_rectangle([0, 0, p - 1, p - 1], radius=int(p * 0.22), fill=255)
@@ -66,7 +66,7 @@ f_small = ImageFont.truetype(DEJA, 28 * S)
 f_big = ImageFont.truetype(DEJA, 46 * S)
 f_tag = ImageFont.truetype(DEJA, 18 * S)
 
-d.text((x, 30 * S), 'E-LEARNING', font=f_small, fill=(16, 160, 120, 255))
+d.text((x, 30 * S), 'E-LEARNING', font=f_small, fill=(14, 130, 190, 255))
 d.text((x, 66 * S), 'Komunitas Anak Sepaku', font=f_big, fill=(23, 42, 69, 255))
 d.text((x, 130 * S), 'Belajar bareng · Materi swadaya komunitas', font=f_tag, fill=(92, 105, 120, 255))
 
@@ -77,7 +77,7 @@ svg = '''<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="180" viewB
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#1269b2"/>
-      <stop offset="1" stop-color="#10a078"/>
+      <stop offset="1" stop-color="#0e82be"/>
     </linearGradient>
   </defs>
   <g transform="translate(15,15)">
@@ -90,7 +90,7 @@ svg = '''<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="180" viewB
     </g>
     <path d="M54 41 L75 30 L96 41" stroke="#fff" stroke-width="3" fill="none" opacity="0.85"/>
   </g>
-  <text x="190" y="58" font-family="DejaVu Sans,Arial,sans-serif" font-size="28" font-weight="bold" fill="#10a078">E-LEARNING</text>
+  <text x="190" y="58" font-family="DejaVu Sans,Arial,sans-serif" font-size="28" font-weight="bold" fill="#0e82be">E-LEARNING</text>
   <text x="190" y="112" font-family="DejaVu Sans,Arial,sans-serif" font-size="46" font-weight="bold" fill="#172a45">Komunitas Anak Sepaku</text>
   <text x="190" y="151" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#5c6978">Belajar bareng · Materi swadaya komunitas</text>
 </svg>

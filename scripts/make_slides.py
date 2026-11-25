@@ -28,7 +28,7 @@ slides = [
 icon = Image.open(ICON).convert('RGBA').resize((280, 280), Image.LANCZOS)
 
 for idx, (small, big, desc) in enumerate(slides, 1):
-    img = gradient((W * S, H * S), (16, 86, 150), (12, 150, 122))
+    img = gradient((W * S, H * S), (16, 86, 150), (12, 110, 175))
     d = ImageDraw.Draw(img, 'RGBA')
 
     # dekorasi lingkaran halus

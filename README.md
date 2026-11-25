@@ -194,4 +194,4 @@ Error `not enough random questions` terjadi bila jumlah slot acak melebihi jumla
 
 ## Tampilan halaman depan
 
-Halaman depan memakai theme **Academi 5.3** (sama seperti openCourse ITTS). Pasang dengan `scripts/install_academi.sh` — **backup dulu** lewat `scripts/backup.sh`. Slider ada di `brand/slides/`, diatur lewat `scripts/configure_academi.php`. Konten dummy theme dibersihkan oleh `scripts/clean_academi_content.php`.
+Halaman depan memakai theme **Academi 5.3** (sama seperti openCourse ITTS). Pasang dengan `scripts/install_academi.sh` — **backup dulu** lewat `scripts/backup.sh`. Slider ada di `brand/slides/`, diatur lewat `scripts/configure_academi.php`. Konten dummy theme dibersihkan oleh `scripts/clean_academi_content.php`. Warna dasar biru (`#1269B2` / `#0E82BE`) diatur oleh `scripts/set_academi_blue.php`.

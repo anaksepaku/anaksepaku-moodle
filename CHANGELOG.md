@@ -18,7 +18,7 @@
 - Skrip `scripts/create_ws_token.sh` untuk otomasi REST (token tidak di-commit).
 
 ### Tampilan depan
-- Theme Academi 5.3 aktif, 3 slide hero komunitas, forcelogin dimatikan agar halaman depan publik.
+- Theme Academi 5.3 aktif, 3 slide hero komunitas, forcelogin dimatikan agar halaman depan publik. Palet diubah ke biru (hijau dihilangkan).
 
 ### Branding
 - Logo, compact logo, dan favicon dibuat dan dipasang via core_admin settings. Revisi identitas: komunitas Anak Sepaku, materi umum/swadaya komunitas.
